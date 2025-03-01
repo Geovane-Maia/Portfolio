@@ -8,12 +8,15 @@ function Header(){
         setShowMenu(!showMenu)
     }
 
+
+    // opcoes da tag nav para habilitar o menu sanduiche 
+    // className={`${styles.menuSandwich} ${showMenu ? styles.show : ''}`}
     return(
         <header className={styles.header}>
             <Link to='/'>
             <span>Geovane Maia.dev</span>
             </Link>
-            <nav className={`${styles.menuSandwich} ${showMenu ? styles.show : ''}`}
+            <nav className={`${styles.menuSandwich} ${showMenu ? styles.show : ''}`} 
             onClick={togleMenu}>
                 <Link to="/">Home</Link>
                 <Link to="/sobre">Sobre</Link>
